@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credit Card payment Gateway</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    
+  </head>
+
+  <body>
+    <h1><center>Credit Card payment Gateway</center></h1>
+    <hr />
+    <div class="payment-form">
+      <form
+      onsubmit="event.preventDefault();onFormSubmit();"
+      autocomplete="off">
+      
+        <div class="payment-form-content"></div>
+
+        <div>
+          <label>Card Number*</label
+          ><label class="validation-error hide" id="cardNumberValidationError"
+            >This field is required.</label
+          >
+          <input type="text" name="cardNumbe"placeholder="Vaild Card Number" id="cardNumbe" />
+        </div>
+        <div>
+          <label>Expirattion Date*</label>
+          <label class="validation-error hide" id="ExpirattionValidationError">This field is required.</label>
+
+          <input type="text" name="Expirattion" placeholder="MM/YY" id="Expirattion" pattern="((0[1-9])|(1[0-2]))\/(20[0-9]{2})" />
+        </div>
+        <div>
+          <label>CV Code*</label>
+          <label class="validation-error hide" id="CVValidationError"
+            >This field is required.</label
+          >
+          <input type="text" name="CV" placeholder="CVC " id="CV" />
+        </div>
+        <div>
+          <label>Card Owner*</label>
+          <label class="validation-error hide" id="cardownerValidationError"
+            >This field is required.</label
+          >
+          <input type="text" name="cardowner" placeholder="Card owner Name" id="cardowner" />
+        </div>
+        <div class="form-action-buttons">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <br />
+  
+   
+    </div>
+    <script src="../js/payment.js"></script>
+  </body>
+</html>
+                                       

@@ -1,0 +1,5 @@
+    cell5.innerHTML = `<button class="btn btn-primary" onclick="editRecord(${data.length - 1})">Edit</button>
+        <button class="btn btn-danger" onclick="deleteRecord(${data.length - 1})">Delete</button>`;
+        table.style.display = "block";
+        console.log(data);
+        
